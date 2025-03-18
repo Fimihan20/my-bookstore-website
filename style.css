@@ -4,6 +4,10 @@
     font-family:sans-serif;
     box-sizing:border-box;
 }
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
 .container{
     width:100%;
     min-height: 100vh;
@@ -11,6 +15,7 @@
     background-size: cover;
     background-position: center;
     padding:10px 8%;
+    flex-wrap: wrap;
 }
 nav{
     width:100%;
@@ -53,12 +58,13 @@ a:hover{
 .content{
     margin-top: 14%;
     color:white;
-    width: 1000px;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
+    padding:20px;
 }
 .text-container{
-    flex:1;
+    width:50%;
 }
 .text-container h2{
     font-size: 25px;
@@ -112,21 +118,35 @@ color:white;
     align-items: center;
     justify-content: center;
     margin-top: 10px;
+    padding:10px 5px;
     margin-left: 100px;
     background-color:orange;
 color:black;
 border-radius: 2px;
-position: absolute;
+position: relative;
+display:inline-block;
 }
 .signup:hover{
     color:red;
 }
+.image-container{
+    width:100%;
+    min-width: 300px;
+    flex: 1;
+    display:flex;
+    padding:0 20px;
+    justify-content:center;
+    align-items:center;
+    margin-top: 20px;
+}
 .sideimage{
-    width:600px;
+    width:100%;
+    display: flex;
+    max-width: 500px;
     height:auto;
-    margin-left: 60px;
     border-radius: 10px;
-    margin-bottom: 70px;
+    margin: auto;
+    margin-bottom: 50px;
     transition:transform 0.3 ease, box-shadow 0.3 ease;
 }
 .sideimage:hover{
@@ -232,12 +252,12 @@ cursor:pointer;
 .col-3 p .time{
     margin-top: 50px;
 }
-@media (max-width:768px){
-    .container{
+@media screen and (max-width:768px) {
+    .content{
         flex-direction: column;
         text-align: center;
     }
-    img{
-        width:100%;
+    .image-container{
+        width: 100%;
     }
 }
