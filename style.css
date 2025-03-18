@@ -37,12 +37,12 @@ nav{
 }
 nav ul{
     list-style: none;
-    width:150%;
+    width:auto%;
     text-align: right;
     padding-right:50px;
     display:flex;
     justify-content: space-between;
-    gap: 30px;
+    gap: 20px;
 }
 nav ul li{
     margin:10px 20px;
@@ -203,10 +203,10 @@ button{
     padding:8px 12px;
 }
 .footer-container{
-    margin-top: 150px;
+    margin-top: 50px;
     width:100%;
-    padding:100px 15px;
-background: black;
+    padding:50px 15px;
+background: #222;
 color:white;
 display:flex;
 }
@@ -251,6 +251,12 @@ cursor:pointer;
 }
 .col-3 p .time{
     margin-top: 50px;
+}
+@media screen and (max-width: 768px) {
+    .book-sections {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+    }
 }
 @media screen and (max-width:768px) {
     .content{
