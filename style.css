@@ -41,7 +41,7 @@ nav{
 }
 nav ul{
     list-style: none;
-    width:auto%;
+    width:auto;
     text-align: right;
     padding-right:50px;
     display:flex;
@@ -147,7 +147,6 @@ display:inline-block;
 }
 .sideimage{
     width:80%;
-    display: flex;
     max-width: 400px;
     height:auto;
     border-radius: 10px;
@@ -240,7 +239,8 @@ flex-grow: 6;
     list-style: none;
 }
 .col-2  input{
-    width:400px;
+    width:100%;
+max-width:400px;
     height:45px;
     border-radius: 4px;
     text-align: center;
@@ -261,12 +261,6 @@ cursor:pointer;
 .col-3 p .time{
     margin-top: 50px;
 }
-@media screen and (max-width: 768px) {
-    .book-sections {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 10px;
-    }
-}
 @media screen and (max-width:768px) {
     .content{
         flex-direction: column;
@@ -274,5 +268,9 @@ cursor:pointer;
     }
     .image-container{
         width: 100%;
+    }
+.book-sections {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
     }
 }
