@@ -208,7 +208,7 @@ button{
     padding:8px 12px;
 }
 .footer-container{
-    margin-top:auto;
+    margin-top:100px;
     width:100%;
     padding:50px 15px;
 background: #222;
@@ -220,7 +220,6 @@ flex-wrap:wrap;
 .footer-container div{
     text-align: center;   
 flex:1;
-margin-top:100px;
 }
 .col-2{
 flex-grow: 6;
