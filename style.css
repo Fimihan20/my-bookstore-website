@@ -7,7 +7,7 @@
 }
 /* The styling of the body*/
 body{
-    width: 100%;
+    width: auto;
     overflow-x: hidden;
 display:flex;
 flex-direction:column;
@@ -15,7 +15,7 @@ min-height:100vh;
 }
 /* The header styling*/
 .container{
-    width:100%;
+    width:auto;
     min-height: 100vh;
 flex:1;
 background-image:linear-gradient(rgba(9,0,77,0.65),rgba(9,0,77,0.65)),url(images/wallofbooks.jpeg);
@@ -26,7 +26,7 @@ background-image:linear-gradient(rgba(9,0,77,0.65),rgba(9,0,77,0.65)),url(images
 }
 /* The navigation styling*/
 nav{
-    width:100%;
+    width:auto;
     display:flex;
     align-items:center;
     justify-content:space-between;
