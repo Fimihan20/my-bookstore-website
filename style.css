@@ -59,6 +59,11 @@ nav ul li a{
 a:hover{
     color:orange;
 }
+.harmburger {
+font-size:30px;
+cursor:pointer;
+display:none;
+}
 .content{
     margin-top: 14%;
     color:white;
@@ -272,4 +277,25 @@ cursor:pointer;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 10px;
     }
+nav ul{
+    list-style: none;
+flex-direction: column;
+position:absolute;
+top:60px;
+right:0;
+background:rgba(0,0,0,0.9);
+    width:100%;
+    text-align: center;
+    display:none;
+    padding: 20px 0;
+}
+nav ul li{
+    margin:10px 0px;
+}
+.harmburger {
+display:block;
+}
+nav ul .show{
+display:flex;
+}
 }
