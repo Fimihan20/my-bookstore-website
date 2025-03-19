@@ -278,7 +278,6 @@ cursor:pointer;
         gap: 10px;
     }
 nav ul{
-    list-style: none;
 flex-direction: column;
 position:absolute;
 top:60px;
