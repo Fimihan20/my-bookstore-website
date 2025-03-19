@@ -10,6 +10,7 @@
     <nav class="books-nav">
         <img src="images/book (1).png" class="logo">
         <h3 class="logoname">GEORGINA'S BOOKSTORE</h3>
+<div class ="harmburger" navclick=""toggleMenu()">&#9776;</div>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="books.html">Books</a></li>
@@ -100,5 +101,12 @@
             </a>
         </div>
     </section>
+<script>
+function toggleMenu() {
+const menu =
+document.querySelector ('.nav-links');
+menu.classlist.toggle('show');
+}
+</script>
 </body>
 </html>
